@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandsomeStrokes 입력 테스트</title>
+    <script src="./HandsomeStrokes.js"></script>
+</head>
+<body>
+    <h1>HandsomeStrokes 입력 테스트</h1>
+    <p>입력된 텍스트가 밑에 표시됩니다.</p>
+    <p id="inputText"></p>
+    <script>
+        const inputText = document.getElementById('inputText');
+        const hs_textEditor = new HandsomeStrokes();
+        hs_textEditor.addBlinkHandler(function (value) {
+            inputText.innerText = value;
+        });
+        hs_textEditor.addUpdateHandler(function (value) {
+            inputText.innerText = value;
+        });
+        hs_textEditor.focus();
+    </script>
+</body>
+</html>
