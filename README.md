@@ -1,0 +1,2 @@
+# HandsomeStrokes
+Korean Text Editor
